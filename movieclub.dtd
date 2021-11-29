@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT MovieClub (html)>
+<!ELEMENT html (heading?,theater*)>
+<!ATTLIST html xmlns CDATA #REQUIRED>
+<!ELEMENT heading (img,text)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ATTLIST img src CDATA #REQUIRED>
+<!ATTLIST theater id CDATA #REQUIRED>
+<!ELEMENT theater (img,name,address,Movie*)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT photos (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST Movie number CDATA #REQUIRED>
+<!ELEMENT Movie (image,moviename,rate,duration,show*)>
+<!ELEMENT moviename (#PCDATA)>
+<!ELEMENT image (img)>
+<!ELEMENT rate (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT poster (#PCDATA)>
+<!ELEMENT show (#PCDATA)>
+<!ATTLIST show time CDATA #REQUIRED>
